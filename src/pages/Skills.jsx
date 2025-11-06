@@ -173,7 +173,7 @@ const Skills = () => {
         ))}
       </div>
 
-      {/* Professional Skills (Radial Progress Bars) */}
+     
   
       
        <h1 className="text-4xl font-bold flex justify-center mb-8">

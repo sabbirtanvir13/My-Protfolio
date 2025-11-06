@@ -75,7 +75,7 @@
 
 
 import React from 'react';
-
+import projects3 from '../assets/pata.png'
 const projects = [
   {
     title: 'Project One',
@@ -89,10 +89,11 @@ const projects = [
     image: 'https://media.licdn.com/dms/image/v2/D4E22AQEI-2a8YOczvg/feedshare-shrink_2048_1536/B4EZoceCs2IQAw-/0/1761414231310?e=1764201600&v=beta&t=kKcRzdLkbVsR85r7tXEuQ3A-1p0AOHORPhuu3sHZgC4',
     link: '#',
   },
+
   {
     title: 'Project Three',
     description: 'A chat application using Socket.io and Node.js.',
-    image: 'https://media.licdn.com/dms/image/v2/D4E22AQFWQ5OHUz4HCQ/feedshare-shrink_2048_1536/B4EZok_mIFHgAw-/0/1761557243703?e=1764201600&v=beta&t=3c8GeNVtmS0RzEKT75Sdcukg2fnVMtxdH-9v9wFPptk',
+    image: 'blob:https://www.facebook.com/b18fe410-fae0-47f2-8bbd-f0fb3ce3b2c0',
     link: '#',
   },
   {
