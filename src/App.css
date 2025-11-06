@@ -45,3 +45,47 @@ margin-left: 55px;
 }
 
 
+.container{
+  padding: 90px;
+}
+
+.service{
+  color: aliceblue;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 4rem;
+}
+.service-list{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+grid-gap: 40px;
+margin-top: 50px;
+}
+.sub-title{
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 70px;
+}
+.service-list div{
+  background:transparent ;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 13px;
+  border-right: 10px;
+  border-radius: 20px;
+  transition: background 0.5s transform 0.5s;
+  box-shadow:1px 1px 20px #012250f7,
+  1px 1px 40px #0053b8f7
+}
+.service-list div i{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.service-list div h2{
+ font-size: 30px;
+ font-weight: 500;
+ margin-bottom: 15px;
+}
+
+
+

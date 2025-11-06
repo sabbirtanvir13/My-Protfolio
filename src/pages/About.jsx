@@ -27,7 +27,7 @@ const About = () => {
         transition={{ delay: 0.6 }}
       >
         <img
-          src="https://media.licdn.com/dms/image/v2/D4E03AQENoYOGnVc9mQ/profile-displayphoto-crop_800_800/B4EZo_Av6rJgAI-/0/1761993753227?e=1764201600&v=beta&t=heBizilWHaEQWNf05xW1w3m9TJV3d4xi6qQxVWA1V0A" // এখানে নিজের photo দাও
+          src="https://media.licdn.com/dms/image/v2/D4E03AQENoYOGnVc9mQ/profile-displayphoto-crop_800_800/B4EZo_Av6rJgAI-/0/1761993753227?e=1764201600&v=beta&t=heBizilWHaEQWNf05xW1w3m9TJV3d4xi6qQxVWA1V0A" 
           alt="Developer"
           style={{ borderColor: "#9D00FF" }}
           className="w-72 h-72 object-cover rounded-full shadow-2xl border-4 "
