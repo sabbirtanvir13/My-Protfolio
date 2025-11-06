@@ -1,76 +1,3 @@
-// import React from 'react';
-
-// const LatestWork = () => {
-//     return (
-//         <div className='grid '>
-//              <h1 className="text-4xl text-white font-bold flex justify-center mb-8">
-//         My Recent <span className='text-blue-500 ml-2'>  work</span>
-//       </h1>
-
-//          <div className="card bg-base-100 w-96 shadow-sm">
-//   <figure>
-//     <img
-//       src="https://media.licdn.com/dms/image/v2/D4E22AQFWQ5OHUz4HCQ/feedshare-shrink_2048_1536/B4EZok_mIFHgAw-/0/1761557243703?e=1764201600&v=beta&t=3c8GeNVtmS0RzEKT75Sdcukg2fnVMtxdH-9v9wFPptk"
-//       alt="Shoes" />
-//   </figure>
-//   <div className="card-body">
-//     <h2 className="card-title">Card Title</h2>
-//     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-//     <div className="card-actions ">
-//       <button className="btn btn-primary">Buy Now</button>
-//     </div>
-//   </div>
-//          </div>
-
-
-//          <div className="card bg-base-100 w-96 shadow-sm">
-//   <figure>
-//     <img
-//       src="https://media.licdn.com/dms/image/v2/D4E22AQFWQ5OHUz4HCQ/feedshare-shrink_2048_1536/B4EZok_mIFHgAw-/0/1761557243703?e=1764201600&v=beta&t=3c8GeNVtmS0RzEKT75Sdcukg2fnVMtxdH-9v9wFPptk"
-//       alt="Shoes" />
-//   </figure>
-//   <div className="card-body">
-//     <h2 className="card-title">Card Title</h2>
-//     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-//     <div className="card-actions ">
-//       <button className="btn btn-primary">Buy Now</button>
-//     </div>
-//   </div>
-//          </div>
-//          <div className="card bg-base-100 w-96 shadow-sm">
-//   <figure>
-//     <img
-//       src="https://media.licdn.com/dms/image/v2/D4E22AQFWQ5OHUz4HCQ/feedshare-shrink_2048_1536/B4EZok_mIFHgAw-/0/1761557243703?e=1764201600&v=beta&t=3c8GeNVtmS0RzEKT75Sdcukg2fnVMtxdH-9v9wFPptk"
-//       alt="Shoes" />
-//   </figure>
-//   <div className="card-body">
-//     <h2 className="card-title">Card Title</h2>
-//     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-//     <div className="card-actions ">
-//       <button className="btn btn-primary">Buy Now</button>
-//     </div>
-//   </div>
-//          </div>
-//          <div className="card bg-base-100 w-96 shadow-sm">
-//   <figure>
-//     <img
-//       src="https://media.licdn.com/dms/image/v2/D4E22AQFWQ5OHUz4HCQ/feedshare-shrink_2048_1536/B4EZok_mIFHgAw-/0/1761557243703?e=1764201600&v=beta&t=3c8GeNVtmS0RzEKT75Sdcukg2fnVMtxdH-9v9wFPptk"
-//       alt="Shoes" />
-//   </figure>
-//   <div className="card-body">
-//     <h2 className="card-title">Card Title</h2>
-//     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-//     <div className="card-actions ">
-//       <button className="btn btn-primary">Buy Now</button>
-//     </div>
-//   </div>
-//          </div>
-
-//         </div>
-//     );
-// };
-
-// export default LatestWork;
 
 
 
@@ -93,7 +20,7 @@ const projects = [
   {
     title: 'Project Three',
     description: 'A chat application using Socket.io and Node.js.',
-    image: 'blob:https://www.facebook.com/b18fe410-fae0-47f2-8bbd-f0fb3ce3b2c0',
+    image: 'https://media.licdn.com/dms/image/v2/D4E22AQEI-2a8YOczvg/feedshare-shrink_2048_1536/B4EZoceCs2IQAw-/0/1761414231310?e=1764201600&v=beta&t=kKcRzdLkbVsR85r7tXEuQ3A-1p0AOHORPhuu3sHZgC4',
     link: '#',
   },
   {
@@ -106,7 +33,7 @@ const projects = [
 
 const LatestWork = () => {
   return (
-    <div className="px-4 py-12 ">
+    <div className="md:px-4  md:py-12 ">
       <h1 className="text-4xl font-bold text-center text-white mb-12">
         My Recent <span className="text-blue-500">Work</span>
       </h1>

@@ -56,7 +56,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className='about mt-24 px-4 md:px-20 py-12 '>
+    <div className='about mt-24 px-4 md:px-20 py-12  '>
       {/* Title */}
       <motion.h1
         className="text-4xl sm:text-5xl md:text-6xl font-bold text-white text-center mb-12"
@@ -64,7 +64,7 @@ const About = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        About Me
+        About <span className='text-blue-500'> Me </span>
       </motion.h1>
 
       {/* Content */}

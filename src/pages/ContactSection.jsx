@@ -24,7 +24,7 @@ const ContactSection = () => {
       {/* Right side form */}
       <div className="flex-1">
         <h2 className="text-4xl font-bold mb-4 text-white">
-          📬 Get in <span className="text-[#ff4655]">Touch</span>
+          📬 Get in <span className="text-blue-500">Touch</span>
         </h2>
         <p className="text-white mb-8">
           Have any questions or need help? Fill out the form and we’ll get back
@@ -37,7 +37,7 @@ const ContactSection = () => {
             📞 Phone:{" "}
             <a
               href=""
-              className="text-[#ff4655] hover:underline"
+              className="text-blue-500 hover:underline"
             >
               +880 1777-777777
             </a>
@@ -46,7 +46,7 @@ const ContactSection = () => {
             ✉️ Email:{" "}
             <a
               href=""
-              className="text-[#ff4655] hover:underline"
+              className=" text-blue-500 hover:underline"
             >
               sabbirtanvirahmed18@gmail.com
             </a>
@@ -63,7 +63,7 @@ const ContactSection = () => {
           <textarea className="border border-gray-300 rounded-lg p-3 text-black shadow w-full" name="" id="" cols="30"></textarea>
           <button
             type="submit"
-            className="w-full bg-[#ff4655] text-white py-3 rounded-lg font-semibold text-lg hover:bg-[#e03e4d] transition-all"
+            className="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-all"
           >
             Send Message 🚀
           </button>

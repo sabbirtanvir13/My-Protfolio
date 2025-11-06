@@ -1,4 +1,5 @@
 import { FaShoppingCart } from "react-icons/fa";
+import { IoCodeSharp } from "react-icons/io5";
 import { NavLink } from "react-router";
 
 
@@ -30,7 +31,7 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl text-purple-400"> My Portfolio</a>
+                    <a className="btn btn-ghost text-xl text-white"> Tanvir <span className="text-blue-500">Ahmed </span> <p>  <IoCodeSharp /></p>  </a>
                 </div>
               
                 <div className="navbar-end hidden lg:flex">
