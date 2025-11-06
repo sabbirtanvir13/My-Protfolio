@@ -87,5 +87,10 @@ margin-top: 50px;
  margin-bottom: 15px;
 }
 
+.div{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 
