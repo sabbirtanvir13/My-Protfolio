@@ -1,0 +1,47 @@
+ html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #000000, #1a0021, #20002a);
+  background-repeat: no-repeat; 
+  background-size: cover;  
+  background-attachment: fixed;  
+  font-family: sans-serif;
+}
+
+
+
+#root > div {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link {
+  color: gray;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: normal;
+  transition: color 0.3s;
+} 
+.icon{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+ 
+  border-radius: 50%;
+  font-size: 20px;
+  color: aqua;
+  text-decoration: none;
+margin-left: 55px;
+
+}
+.icon p:hover{
+  background:aqua 
+ 
+}
+
+
