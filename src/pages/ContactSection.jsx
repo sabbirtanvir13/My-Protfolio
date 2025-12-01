@@ -39,7 +39,7 @@ const ContactSection = () => {
               href=""
               className="text-blue-500 hover:underline"
             >
-              +880 1777-777777
+              +880 1777-829308
             </a>
           </p>
                 <p className="font-semibold text-white ">

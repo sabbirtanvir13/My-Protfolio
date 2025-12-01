@@ -5,23 +5,23 @@ import React from 'react';
 import projects3 from '../assets/pata.png'
 const projects = [
   {
-    title: 'Project One',
-    description: 'A project built with React, Node.js, MongoDB.',
-    image: 'https://media.licdn.com/dms/image/v2/D4E22AQFWQ5OHUz4HCQ/feedshare-shrink_2048_1536/B4EZok_mIFHgAw-/0/1761557243703?e=1764201600&v=beta&t=3c8GeNVtmS0RzEKT75Sdcukg2fnVMtxdH-9v9wFPptk',
-    link: '#',
+    title: 'ARTIFY ',
+    description: 'A project built with React, React Router , Tailwind CSS, SweetAlert Node.js, Express.js MongoDB Firebase Auth',
+    image: 'https://media.licdn.com/dms/image/v2/D4E22AQHsfRmhwHX16g/feedshare-shrink_2048_1536/B4EZqQpPkkGYAw-/0/1763363328086?e=1766016000&v=beta&t=AQ_76uIillDiZr20vFeD2PfOw4klqmoQ2flJZ8FJPCk',
+    link: 'https://fluffy-palmier-ff2ab6.netlify.app/',
   },
   {
-    title: 'Project Two',
-    description: 'A portfolio website showcasing my skills and works.',
-    image: 'https://media.licdn.com/dms/image/v2/D4E22AQEI-2a8YOczvg/feedshare-shrink_2048_1536/B4EZoceCs2IQAw-/0/1761414231310?e=1764201600&v=beta&t=kKcRzdLkbVsR85r7tXEuQ3A-1p0AOHORPhuu3sHZgC4',
-    link: '#',
+    title: 'Hero.io',
+    description: 'A project built with  React React Router React Icons CSS / TailwindCSS JSON react-toastify',
+    image: 'https://media.licdn.com/dms/image/v2/D4E22AQFWQ5OHUz4HCQ/feedshare-shrink_480/B4EZok_mIFHgAY-/0/1761557243686?e=1766016000&v=beta&t=AMYUz2yfcIvF9P_rQH3UDpeC1SSIYJRRowoBWeAP4Po',
+    link: 'https://soft-bonbon-e8ce0f.netlify.app/app',
   },
 
   {
-    title: 'Project Three',
-    description: 'A chat application using Socket.io and Node.js.',
-    image: 'https://media.licdn.com/dms/image/v2/D4E22AQEI-2a8YOczvg/feedshare-shrink_2048_1536/B4EZoceCs2IQAw-/0/1761414231310?e=1764201600&v=beta&t=kKcRzdLkbVsR85r7tXEuQ3A-1p0AOHORPhuu3sHZgC4',
-    link: '#',
+    title: 'GameHub',
+    description: ' A Game Library application using  React JS Firebase JavaScript Tailwind CSS',
+    image: 'https://media.licdn.com/dms/image/v2/D4E22AQEI-2a8YOczvg/feedshare-shrink_480/B4EZoceCs2IQAY-/0/1761414231275?e=1766016000&v=beta&t=7Ui0-YyE7xb8EMPqsIH5Xx3ocjR1cJ7p0q5a1wUrrkc',
+    link: 'https://fabulous-frangipane-82adb2.netlify.app/?',
   },
   {
     title: 'Project Four',
