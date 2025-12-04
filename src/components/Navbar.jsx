@@ -31,7 +31,7 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl text-white"> Tanvir <span className="text-blue-500">Ahmed </span> <p>  <IoCodeSharp /></p>  </a>
+                    <a className="btn btn-ghost text-xl text-white"> Tanvir <span className="text-yellow-400">Ahmed </span> <p>  <IoCodeSharp /></p>  </a>
                 </div>
               
                 <div className="navbar-end hidden lg:flex">

@@ -6,10 +6,10 @@ const ContactSection = () => {
 
        <div>
            <h1 className="text-4xl font-bold text-center text-white mb-12">
-      Contact <span className="text-blue-500">Me</span>
+     <span className="text-yellow-400 font-bold">   Contact Me</span>
       </h1>
     <div className="px-6 py-12 rounded-2xl shadow-inner max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
-      {/* Left side image */}
+     
      
   
         
@@ -21,10 +21,9 @@ const ContactSection = () => {
         />
       </div>
 
-      {/* Right side form */}
       <div className="flex-1">
         <h2 className="text-4xl font-bold mb-4 text-white">
-          📬 Get in <span className="text-blue-500">Touch</span>
+           Get in <span className="text-yellow-400">Touch</span>
         </h2>
         <p className="text-white mb-8">
           Have any questions or need help? Fill out the form and we’ll get back
@@ -34,7 +33,7 @@ const ContactSection = () => {
         <div>
             <div>
                 <p className="font-semibold text-white ">
-            📞 Phone:{" "}
+            📞 Phone:{"01777829308 "}
             <a
               href=""
               className="text-blue-500 hover:underline"
@@ -43,7 +42,7 @@ const ContactSection = () => {
             </a>
           </p>
                 <p className="font-semibold text-white ">
-            ✉️ Email:{" "}
+            ✉️ Email:{" sabbirtanvirahmed18@gmail.com "}
             <a
               href=""
               className=" text-blue-500 hover:underline"

@@ -8,12 +8,12 @@ const About = () => {
     <div className='about mt-24 px-4 md:px-20 py-12  '>
       {/* Title */}
       <motion.h1
-        className="text-4xl sm:text-5xl md:text-6xl font-bold text-white text-center mb-12"
+        className="text-4xl sm:text-5xl md:text-4xl font-bold text-white text-center mb-12"
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        About <span className='text-blue-500'> Me </span>
+       <span className='text-yellow-400 font-bold'> About  Me </span>
       </motion.h1>
 
       {/* Content */}

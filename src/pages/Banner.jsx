@@ -17,7 +17,7 @@ const Banner = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Hi, I’m <span className="text-purple-400">Tanvir Ahmed</span>
+          Hi, Im <span className="font-bold text-yellow-400">Tanvir Ahmed</span>
         </motion.h1>
 
         <motion.h2

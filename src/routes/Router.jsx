@@ -27,9 +27,10 @@ import HomeLayout from '../layout/HomeLayout';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Service from '../pages/Service';
-import Skills from '../pages/Skills';
-import LatestWork from '../pages/LatestWork';
+
+// import LatestWork from '../pages/LatestWork';
 import ContactSection from '../pages/ContactSection';
+import PortfolioSection from '../components/PortfolioSection';
 
 const router = createBrowserRouter([
   {
@@ -46,7 +47,7 @@ const router = createBrowserRouter([
       },
       {
           path: '/project',
-        element: <LatestWork></LatestWork>
+        element:<PortfolioSection></PortfolioSection>
       },
       {
           path: '/contact',
