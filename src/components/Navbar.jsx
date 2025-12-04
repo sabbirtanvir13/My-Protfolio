@@ -7,8 +7,8 @@ const Navbar = () => {
      const links = <>
         <NavLink className="mr-3  hover:text-purple-400 transition-colors duration-300" to="/"> Home</NavLink>
 
-        <NavLink className="mr-3  hover:text-purple-400 transition-colors duration-300" to="/allcetagory">About</NavLink>
-        <NavLink className="mr-3  hover:text-purple-400 transition-colors duration-300" to="/allcetagory">Projects</NavLink>
+        <NavLink className="mr-3  hover:text-purple-400 transition-colors duration-300" to="/about">About</NavLink>
+        <NavLink className="mr-3  hover:text-purple-400 transition-colors duration-300" to="/project">Projects</NavLink>
 
         <NavLink className="mr-3  hover:text-purple-400 transition-colors duration-300" to="/contact">Contact</NavLink>
 
