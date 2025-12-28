@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaPlay } from "react-icons/fa";
 
-const Card = ({ img, title, desc, repo, demo }) => {
+const Card = ({ img, title, desc, repo, Live }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.03 }}
@@ -25,7 +25,7 @@ const Card = ({ img, title, desc, repo, demo }) => {
         </a>
 
         <a
-          href={demo}
+          href={Live}
           className="flex items-center gap-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm hover:opacity-90 transition"
         >
           <FaPlay />Live
