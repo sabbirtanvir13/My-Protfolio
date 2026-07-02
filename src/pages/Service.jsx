@@ -153,7 +153,7 @@ const Service = () => {
         <h2 className="text-3xl md:text-5xl font-bold mb-3">
           <span className="text-yellow-400">💼 My Services</span>
         </h2>
-        <p className="text-gray-400 mt-2 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+        <p className="dark:text-gray-400 text-gray-600 mt-2 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
           From crafting beautiful UIs to building robust backend systems — here's
           what I can do for you.
         </p>
@@ -171,7 +171,7 @@ const Service = () => {
           <motion.div
             key={index}
             variants={cardVariants}
-            className={`group relative bg-gray-900/70 backdrop-blur-sm border border-gray-800 ${service.borderHover} rounded-2xl p-6 md:p-7 flex flex-col transition-all duration-500 hover:-translate-y-1.5 hover:${service.shadowColor} hover:shadow-xl cursor-default overflow-hidden`}
+            className={`group relative dark:bg-gray-900/70 bg-white/80 backdrop-blur-sm dark:border-gray-800 border-gray-200 ${service.borderHover} rounded-2xl p-6 md:p-7 flex flex-col transition-all duration-500 hover:-translate-y-1.5 hover:${service.shadowColor} hover:shadow-xl cursor-default overflow-hidden`}
           >
             {/* Top gradient accent line */}
             <div
@@ -191,14 +191,14 @@ const Service = () => {
                 {service.icon}
               </div>
               <div>
-                <h3 className="text-base md:text-lg font-bold text-white group-hover:text-purple-200 transition-colors duration-300">
+                <h3 className="text-base md:text-lg font-bold dark:text-white text-gray-900 group-hover:text-yellow-400 transition-colors duration-300">
                   {service.title}
                 </h3>
               </div>
             </div>
 
             {/* Description */}
-            <p className="text-gray-400 text-xs md:text-sm leading-relaxed mb-5 flex-1">
+            <p className="dark:text-gray-400 text-gray-700 text-xs md:text-sm leading-relaxed mb-5 flex-1">
               {service.description}
             </p>
 
@@ -207,7 +207,7 @@ const Service = () => {
               {service.tags.map((tag, i) => (
                 <span
                   key={i}
-                  className="inline-flex items-center gap-1 px-2.5 py-1 bg-gray-800/80 border border-gray-700/60 rounded-md text-[10px] md:text-[11px] font-medium text-gray-400 group-hover:border-gray-600 group-hover:text-gray-300 transition-all duration-300"
+                  className="inline-flex items-center gap-1 px-2.5 py-1 dark:bg-gray-800/80 bg-gray-100 dark:border-gray-700/60 border-gray-300 rounded-md text-[10px] md:text-[11px] font-medium dark:text-gray-400 text-gray-700 group-hover:border-gray-400 transition-all duration-300"
                 >
                   {tag.icon && (
                     <span style={{ color: tag.color }} className="text-xs">
@@ -221,7 +221,7 @@ const Service = () => {
 
             {/* Learn More link */}
             <div className="mt-auto">
-              <span className="inline-flex items-center gap-2 text-xs font-semibold text-gray-500 group-hover:text-yellow-400 transition-all duration-300 cursor-pointer">
+              <span className="inline-flex items-center gap-2 text-xs font-semibold dark:text-gray-500 text-gray-600 group-hover:text-yellow-400 transition-all duration-300 cursor-pointer">
                 Learn More
                 <svg
                   className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1"
