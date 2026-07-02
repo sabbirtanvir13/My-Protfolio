@@ -13,7 +13,7 @@ const Card = ({ img, title, desc, repo, Live }) => {
         <img src={img} alt={title} className="w-full h-40 object-cover rounded-xl" />
       </div>
 
-      <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
+      <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-300 text-sm leading-relaxed mb-6">{desc}</p>
 
       <div className="flex items-center justify-between mt-auto">

@@ -1,2 +1,78 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@theme {
+  --animate-spin-slow: spin-slow 8s linear infinite;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Theme color variables */
+:root {
+  /* Light theme colors */
+  --bg-light: #F8FAFC;
+  --card-light: #FFFFFF;
+  --text-primary-light: #000000;
+  --text-secondary-light: #475569;
+  --border-light: #E2E8F0;
+  --accent-light: #2563EB;
+
+  /* Dark theme colors */
+  --bg-dark: #0F172A;
+  --card-dark: #1E293B;
+  --text-primary-dark: #F8FAFC;
+  --text-secondary-dark: #CBD5E1;
+  --border-dark: #334155;
+  --accent-dark: #3B82F6;
+
+  /* Accent color options */
+  --accent-blue: #3B82F6;
+  --accent-purple: #A855F7;
+  --accent-emerald: #10B981;
+  --accent-orange: #F97316;
+  --accent-color: var(--accent-blue);
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --bg-color: var(--bg-light);
+  --card-color: var(--card-light);
+  --text-primary: var(--text-primary-light);
+  --text-secondary: var(--text-secondary-light);
+  --border-color: var(--border-light);
+  --accent-color: var(--accent-light);
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --bg-color: var(--bg-dark);
+  --card-color: var(--card-dark);
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --border-color: var(--border-dark);
+  --accent-color: var(--accent-dark);
+}
+
+/* Accent color overrides */
+[data-accent="blue"] {
+  --accent-color: var(--accent-blue);
+}
+
+[data-accent="purple"] {
+  --accent-color: var(--accent-purple);
+}
+
+[data-accent="emerald"] {
+  --accent-color: var(--accent-emerald);
+}
+
+[data-accent="orange"] {
+  --accent-color: var(--accent-orange);
+}

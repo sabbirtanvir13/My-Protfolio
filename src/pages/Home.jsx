@@ -7,6 +7,9 @@ import Service from './Service';
 import ContactSection from './ContactSection';
 import PortfolioSection from '../components/PortfolioSection';
 import SkillsSections from '../components/SkillsSections';
+import ExperienceSection from '../components/ExperienceSection';
+import EducationSection from '../components/EducationSection';
+import CertificationsSection from '../components/CertificationsSection';
 
 
 const Home = () => {
@@ -14,11 +17,14 @@ const Home = () => {
         <div>
            <Banner></Banner> 
            <About></About>
+           <ExperienceSection></ExperienceSection>
             <Service></Service>
             <SkillsSections></SkillsSections>
             {/* <Skills></Skills> */}
             {/* <LatestWork></LatestWork> */}
             <PortfolioSection></PortfolioSection>
+            <EducationSection></EducationSection>
+            <CertificationsSection></CertificationsSection>
             <ContactSection></ContactSection>
         </div>
     );

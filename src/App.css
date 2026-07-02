@@ -1,8 +1,18 @@
- html, body, #root {
+:root[data-theme="dark"] {
+  --bg-gradient: linear-gradient(to bottom right, #000000, #1a0021, #20002a);
+  --text-color: #ffffff;
+}
+:root[data-theme="light"] {
+  --bg-gradient: linear-gradient(to bottom right, #f3f4f6, #ffffff, #e5e7eb);
+  --text-color: #1f2937;
+}
+
+html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom right, #000000, #1a0021, #20002a);
+  background: var(--bg-gradient, linear-gradient(to bottom right, #000000, #1a0021, #20002a));
+  color: var(--text-color, inherit);
   background-repeat: no-repeat; 
   background-size: cover;  
   background-attachment: fixed;  
@@ -50,7 +60,6 @@ margin-left: 55px;
 }
 
 .service{
-  color: aliceblue;
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 4rem;

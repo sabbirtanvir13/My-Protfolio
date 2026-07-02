@@ -26,6 +26,9 @@ import { createBrowserRouter } from 'react-router';
 import HomeLayout from '../layout/HomeLayout';
 import Home from '../pages/Home';
 import About from '../pages/About';
+import Experience from '../pages/Experience';
+import Education from '../pages/Education';
+import Certifications from '../pages/Certifications';
 import Service from '../pages/Service';
 
 // import LatestWork from '../pages/LatestWork';
@@ -44,6 +47,18 @@ const router = createBrowserRouter([
       {
           path: '/about',
         element: <About></About>
+      },
+      {
+          path: '/experience',
+        element: <Experience></Experience>
+      },
+      {
+          path: '/education',
+        element: <Education></Education>
+      },
+      {
+          path: '/certifications',
+        element: <Certifications></Certifications>
       },
       {
           path: '/project',
