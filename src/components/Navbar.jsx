@@ -81,49 +81,49 @@ const Navbar = () => {
     const links = (
         <>
             <NavLink 
-                className={({ isActive }) => `mr-3 transition-colors duration-300 ${isActive ? 'text-[var(--accent-color)] font-semibold' : 'hover:text-[var(--accent-color)]'}`} 
+                className={({ isActive }) => `mr-3 transition-colors duration-300 dark:text-gray-300 text-gray-700 ${isActive ? 'text-[var(--accent-color)] font-semibold' : 'hover:text-[var(--accent-color)]'}`} 
                 to="/"
                 onClick={() => setIsMobileMenuOpen(false)}
             >
                 Home
             </NavLink>
             <NavLink 
-                className={({ isActive }) => `mr-3 transition-colors duration-300 ${isActive ? 'text-[var(--accent-color)] font-semibold' : 'hover:text-[var(--accent-color)]'}`} 
+                className={({ isActive }) => `mr-3 transition-colors duration-300 dark:text-gray-300 text-gray-700 ${isActive ? 'text-[var(--accent-color)] font-semibold' : 'hover:text-[var(--accent-color)]'}`} 
                 to="/about"
                 onClick={() => setIsMobileMenuOpen(false)}
             >
                 About
             </NavLink>
             <NavLink 
-                className={({ isActive }) => `mr-3 transition-colors duration-300 ${isActive ? 'text-[var(--accent-color)] font-semibold' : 'hover:text-[var(--accent-color)]'}`} 
+                className={({ isActive }) => `mr-3 transition-colors duration-300 dark:text-gray-300 text-gray-700 ${isActive ? 'text-[var(--accent-color)] font-semibold' : 'hover:text-[var(--accent-color)]'}`} 
                 to="/experience"
                 onClick={() => setIsMobileMenuOpen(false)}
             >
                 Experience
             </NavLink>
             <NavLink 
-                className={({ isActive }) => `mr-3 transition-colors duration-300 ${isActive ? 'text-[var(--accent-color)] font-semibold' : 'hover:text-[var(--accent-color)]'}`} 
+                className={({ isActive }) => `mr-3 transition-colors duration-300 dark:text-gray-300 text-gray-700 ${isActive ? 'text-[var(--accent-color)] font-semibold' : 'hover:text-[var(--accent-color)]'}`} 
                 to="/education"
                 onClick={() => setIsMobileMenuOpen(false)}
             >
                 Education
             </NavLink>
             <NavLink 
-                className={({ isActive }) => `mr-3 transition-colors duration-300 ${isActive ? 'text-[var(--accent-color)] font-semibold' : 'hover:text-[var(--accent-color)]'}`} 
+                className={({ isActive }) => `mr-3 transition-colors duration-300 dark:text-gray-300 text-gray-700 ${isActive ? 'text-[var(--accent-color)] font-semibold' : 'hover:text-[var(--accent-color)]'}`} 
                 to="/certifications"
                 onClick={() => setIsMobileMenuOpen(false)}
             >
                 Certifications
             </NavLink>
             <NavLink 
-                className={({ isActive }) => `mr-3 transition-colors duration-300 ${isActive ? 'text-[var(--accent-color)] font-semibold' : 'hover:text-[var(--accent-color)]'}`} 
+                className={({ isActive }) => `mr-3 transition-colors duration-300 dark:text-gray-300 text-gray-700 ${isActive ? 'text-[var(--accent-color)] font-semibold' : 'hover:text-[var(--accent-color)]'}`} 
                 to="/project"
                 onClick={() => setIsMobileMenuOpen(false)}
             >
                 Projects
             </NavLink>
             <NavLink 
-                className={({ isActive }) => `mr-3 transition-colors duration-300 ${isActive ? 'text-[var(--accent-color)] font-semibold' : 'hover:text-[var(--accent-color)]'}`} 
+                className={({ isActive }) => `mr-3 transition-colors duration-300 dark:text-gray-300 text-gray-700 ${isActive ? 'text-[var(--accent-color)] font-semibold' : 'hover:text-[var(--accent-color)]'}`} 
                 to="/contact"
                 onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -140,14 +140,14 @@ const Navbar = () => {
                 animate={{ y: 0 }}
                 className={`transition-all duration-300 ${
                     isScrolled 
-                        ? 'bg-gray-900/95 backdrop-blur-lg shadow-lg border-b border-gray-800' 
-                        : 'bg-gray-900/80 backdrop-blur-md'
+                        ? 'dark:bg-gray-900/95 bg-white/95 backdrop-blur-lg shadow-lg border-b dark:border-gray-800 border-gray-200' 
+                        : 'dark:bg-gray-900/80 bg-white/80 backdrop-blur-md'
                 }`}
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
                         {/* Logo */}
-                        <NavLink to="/" className="flex items-center gap-2 text-xl font-bold">
+                        <NavLink to="/" className="flex items-center gap-2 text-xl font-bold dark:text-white text-gray-900">
                             Tanvir <span className="text-yellow-400">Ahmed</span>
                             <IoCodeSharp className="text-[var(--accent-color)]" />
                         </NavLink>
@@ -243,55 +243,55 @@ const Navbar = () => {
                             animate={{ x: 0 }}
                             exit={{ x: '100%' }}
                             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-                            className="mobile-menu-container fixed top-16 right-0 bottom-0 w-72 bg-gray-900/95 backdrop-blur-lg border-l border-gray-800 z-50 overflow-y-auto"
+                            className="mobile-menu-container fixed top-16 right-0 bottom-0 w-72 dark:bg-gray-900/95 bg-white/95 backdrop-blur-lg border-l dark:border-gray-800 border-gray-200 z-50 overflow-y-auto"
                         >
                             <div className="p-6 space-y-4">
                                 <div className="space-y-2">
                                     <NavLink 
                                         to="/"
-                                        className={({ isActive }) => `block px-4 py-3 rounded-xl transition-all duration-300 ${isActive ? 'bg-[var(--accent-color)]/20 text-[var(--accent-color)] font-semibold' : 'hover:bg-gray-800 hover:text-white'}`}
+                                        className={({ isActive }) => `block px-4 py-3 rounded-xl transition-all duration-300 dark:text-gray-300 text-gray-700 ${isActive ? 'bg-[var(--accent-color)]/20 text-[var(--accent-color)] font-semibold' : 'dark:hover:bg-gray-800 hover:bg-gray-100 hover:text-[var(--accent-color)]'}`}
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                         Home
                                     </NavLink>
                                     <NavLink 
                                         to="/about"
-                                        className={({ isActive }) => `block px-4 py-3 rounded-xl transition-all duration-300 ${isActive ? 'bg-[var(--accent-color)]/20 text-[var(--accent-color)] font-semibold' : 'hover:bg-gray-800 hover:text-white'}`}
+                                        className={({ isActive }) => `block px-4 py-3 rounded-xl transition-all duration-300 dark:text-gray-300 text-gray-700 ${isActive ? 'bg-[var(--accent-color)]/20 text-[var(--accent-color)] font-semibold' : 'dark:hover:bg-gray-800 hover:bg-gray-100 hover:text-[var(--accent-color)]'}`}
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                         About
                                     </NavLink>
                                     <NavLink 
                                         to="/experience"
-                                        className={({ isActive }) => `block px-4 py-3 rounded-xl transition-all duration-300 ${isActive ? 'bg-[var(--accent-color)]/20 text-[var(--accent-color)] font-semibold' : 'hover:bg-gray-800 hover:text-white'}`}
+                                        className={({ isActive }) => `block px-4 py-3 rounded-xl transition-all duration-300 dark:text-gray-300 text-gray-700 ${isActive ? 'bg-[var(--accent-color)]/20 text-[var(--accent-color)] font-semibold' : 'dark:hover:bg-gray-800 hover:bg-gray-100 hover:text-[var(--accent-color)]'}`}
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                         Experience
                                     </NavLink>
                                     <NavLink 
                                         to="/education"
-                                        className={({ isActive }) => `block px-4 py-3 rounded-xl transition-all duration-300 ${isActive ? 'bg-[var(--accent-color)]/20 text-[var(--accent-color)] font-semibold' : 'hover:bg-gray-800 hover:text-white'}`}
+                                        className={({ isActive }) => `block px-4 py-3 rounded-xl transition-all duration-300 dark:text-gray-300 text-gray-700 ${isActive ? 'bg-[var(--accent-color)]/20 text-[var(--accent-color)] font-semibold' : 'dark:hover:bg-gray-800 hover:bg-gray-100 hover:text-[var(--accent-color)]'}`}
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                         Education
                                     </NavLink>
                                     <NavLink 
                                         to="/certifications"
-                                        className={({ isActive }) => `block px-4 py-3 rounded-xl transition-all duration-300 ${isActive ? 'bg-[var(--accent-color)]/20 text-[var(--accent-color)] font-semibold' : 'hover:bg-gray-800 hover:text-white'}`}
+                                        className={({ isActive }) => `block px-4 py-3 rounded-xl transition-all duration-300 dark:text-gray-300 text-gray-700 ${isActive ? 'bg-[var(--accent-color)]/20 text-[var(--accent-color)] font-semibold' : 'dark:hover:bg-gray-800 hover:bg-gray-100 hover:text-[var(--accent-color)]'}`}
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                         Certifications
                                     </NavLink>
                                     <NavLink 
                                         to="/project"
-                                        className={({ isActive }) => `block px-4 py-3 rounded-xl transition-all duration-300 ${isActive ? 'bg-[var(--accent-color)]/20 text-[var(--accent-color)] font-semibold' : 'hover:bg-gray-800 hover:text-white'}`}
+                                        className={({ isActive }) => `block px-4 py-3 rounded-xl transition-all duration-300 dark:text-gray-300 text-gray-700 ${isActive ? 'bg-[var(--accent-color)]/20 text-[var(--accent-color)] font-semibold' : 'dark:hover:bg-gray-800 hover:bg-gray-100 hover:text-[var(--accent-color)]'}`}
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                         Projects
                                     </NavLink>
                                     <NavLink 
                                         to="/contact"
-                                        className={({ isActive }) => `block px-4 py-3 rounded-xl transition-all duration-300 ${isActive ? 'bg-[var(--accent-color)]/20 text-[var(--accent-color)] font-semibold' : 'hover:bg-gray-800 hover:text-white'}`}
+                                        className={({ isActive }) => `block px-4 py-3 rounded-xl transition-all duration-300 dark:text-gray-300 text-gray-700 ${isActive ? 'bg-[var(--accent-color)]/20 text-[var(--accent-color)] font-semibold' : 'dark:hover:bg-gray-800 hover:bg-gray-100 hover:text-[var(--accent-color)]'}`}
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                         Contact
@@ -299,24 +299,24 @@ const Navbar = () => {
                                 </div>
 
                                 {/* Mobile Accent Color Picker */}
-                                <div className="pt-4 border-t border-gray-800">
-                                    <p className="text-sm text-gray-400 mb-3 px-4">Accent Color</p>
+                                <div className="pt-4 border-t dark:border-gray-800 border-gray-200">
+                                    <p className="text-sm dark:text-gray-400 text-gray-600 mb-3 px-4">Accent Color</p>
                                     <div className="grid grid-cols-4 gap-2 px-4">
                                         <button
                                             onClick={() => setAccentColor('blue')}
-                                            className={`w-10 h-10 rounded-full bg-blue-500 hover:scale-110 transition-transform ${accentColor === 'blue' ? 'ring-2 ring-white ring-offset-2 ring-offset-gray-900' : ''}`}
+                                            className={`w-10 h-10 rounded-full bg-blue-500 hover:scale-110 transition-transform ${accentColor === 'blue' ? 'ring-2 ring-white ring-offset-2 dark:ring-offset-gray-900 ring-offset-white' : ''}`}
                                         />
                                         <button
                                             onClick={() => setAccentColor('purple')}
-                                            className={`w-10 h-10 rounded-full bg-purple-500 hover:scale-110 transition-transform ${accentColor === 'purple' ? 'ring-2 ring-white ring-offset-2 ring-offset-gray-900' : ''}`}
+                                            className={`w-10 h-10 rounded-full bg-purple-500 hover:scale-110 transition-transform ${accentColor === 'purple' ? 'ring-2 ring-white ring-offset-2 dark:ring-offset-gray-900 ring-offset-white' : ''}`}
                                         />
                                         <button
                                             onClick={() => setAccentColor('emerald')}
-                                            className={`w-10 h-10 rounded-full bg-emerald-500 hover:scale-110 transition-transform ${accentColor === 'emerald' ? 'ring-2 ring-white ring-offset-2 ring-offset-gray-900' : ''}`}
+                                            className={`w-10 h-10 rounded-full bg-emerald-500 hover:scale-110 transition-transform ${accentColor === 'emerald' ? 'ring-2 ring-white ring-offset-2 dark:ring-offset-gray-900 ring-offset-white' : ''}`}
                                         />
                                         <button
                                             onClick={() => setAccentColor('orange')}
-                                            className={`w-10 h-10 rounded-full bg-orange-500 hover:scale-110 transition-transform ${accentColor === 'orange' ? 'ring-2 ring-white ring-offset-2 ring-offset-gray-900' : ''}`}
+                                            className={`w-10 h-10 rounded-full bg-orange-500 hover:scale-110 transition-transform ${accentColor === 'orange' ? 'ring-2 ring-white ring-offset-2 dark:ring-offset-gray-900 ring-offset-white' : ''}`}
                                         />
                                     </div>
                                 </div>

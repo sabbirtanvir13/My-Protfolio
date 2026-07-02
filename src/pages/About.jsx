@@ -70,7 +70,7 @@ const About = () => {
             <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-[var(--accent-color)] via-yellow-400 to-[var(--accent-color)] opacity-60 blur-md group-hover:opacity-80 transition-opacity duration-700 animate-spin-slow" />
 
             {/* Photo container */}
-            <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-gray-900 shadow-2xl">
+            <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 dark:border-gray-900 border-gray-200 shadow-2xl">
               <img
                 src={Sabbir}
                 alt="Tanvir Ahmed – Full Stack Developer"
@@ -109,9 +109,9 @@ const About = () => {
         >
           {/* Description */}
           <div className="space-y-3">
-            <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+            <p className="dark:text-gray-300 text-gray-700 text-sm md:text-base leading-relaxed">
               I'm a passionate{" "}
-              <span className="text-white font-semibold">
+              <span className="dark:text-white text-gray-900 font-semibold">
                 Full Stack Developer
               </span>{" "}
               with a strong interest in building modern, scalable, and
@@ -123,7 +123,7 @@ const About = () => {
               collaborated with development teams to deliver high-quality
               products.
             </p>
-            <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+            <p className="dark:text-gray-300 text-gray-700 text-sm md:text-base leading-relaxed">
               Currently, I contribute to a{" "}
               <span className="text-yellow-400 font-semibold">
                 Website Testing Team
@@ -132,7 +132,7 @@ const About = () => {
               ensuring applications work smoothly across different browsers and
               devices.
             </p>
-            <p className="text-gray-400 text-sm md:text-base leading-relaxed">
+            <p className="dark:text-gray-400 text-gray-600 text-sm md:text-base leading-relaxed">
               My goal is to continuously improve my skills, solve real-world
               problems, and create software that provides an excellent user
               experience.
@@ -155,7 +155,7 @@ const About = () => {
               {techStack.map((tech, i) => (
                 <motion.span
                   key={i}
-                  className="group inline-flex items-center gap-1.5 px-3 py-1.5 bg-gray-900/80 border border-gray-800 rounded-lg text-xs font-medium text-gray-300 hover:border-gray-600 hover:text-white transition-all duration-300 cursor-default"
+                  className="group inline-flex items-center gap-1.5 px-3 py-1.5 dark:bg-gray-900/80 bg-gray-100 border dark:border-gray-800 border-gray-300 rounded-lg text-xs font-medium dark:text-gray-300 text-gray-700 dark:hover:border-gray-600 hover:border-gray-400 dark:hover:text-white hover:text-gray-900 transition-all duration-300 cursor-default"
                   whileHover={{ scale: 1.05 }}
                 >
                   <span style={{ color: tech.color }} className="text-sm transition-transform duration-300 group-hover:scale-110">
@@ -176,7 +176,7 @@ const About = () => {
             transition={{ delay: 0.7, duration: 0.6 }}
           >
             {/* Location */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-900/60 border border-gray-800 rounded-full text-sm text-gray-300">
+            <div className="inline-flex items-center gap-2 px-4 py-2 dark:bg-gray-900/60 bg-gray-100 border dark:border-gray-800 border-gray-300 rounded-full text-sm dark:text-gray-300 text-gray-700">
               <FaMapMarkerAlt className="text-red-400 text-xs" />
               <span>Dhaka, Bangladesh</span>
             </div>

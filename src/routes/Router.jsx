@@ -1,27 +1,3 @@
-// import { createBrowserRouter } from "react-router";
-
-// import HomeLayout from "../layout/HomeLayout";
-// import Home from "../pages/Home";
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <HomeLayout></HomeLayout>,
-//     children:[
-
-//       {
-//         path:'/',
-//         element:<Home></Home>
-//       }
-//     ]
-    
-//   },
-// ]);
-//  export default router
-
-
-
-
 import { createBrowserRouter } from 'react-router';
 import HomeLayout from '../layout/HomeLayout';
 import Home from '../pages/Home';
@@ -30,10 +6,9 @@ import Experience from '../pages/Experience';
 import Education from '../pages/Education';
 import Certifications from '../pages/Certifications';
 import Service from '../pages/Service';
-
-// import LatestWork from '../pages/LatestWork';
 import ContactSection from '../pages/ContactSection';
 import PortfolioSection from '../components/PortfolioSection';
+import ProjectDetail from '../pages/ProjectDetail';
 
 const router = createBrowserRouter([
   {
@@ -45,32 +20,35 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-          path: '/about',
-        element: <About></About>
+        path: '/about',
+        element: <About />
       },
       {
-          path: '/experience',
-        element: <Experience></Experience>
+        path: '/experience',
+        element: <Experience />
       },
       {
-          path: '/education',
-        element: <Education></Education>
+        path: '/education',
+        element: <Education />
       },
       {
-          path: '/certifications',
-        element: <Certifications></Certifications>
+        path: '/certifications',
+        element: <Certifications />
       },
       {
-          path: '/project',
-        element:<PortfolioSection></PortfolioSection>
+        path: '/project',
+        element: <PortfolioSection />
       },
       {
-          path: '/contact',
-        element: <ContactSection></ContactSection>
+        path: '/project/:id',
+        element: <ProjectDetail />
+      },
+      {
+        path: '/contact',
+        element: <ContactSection />
       },
     ]
   }
 ]);
 
 export default router;
-

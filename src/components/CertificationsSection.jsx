@@ -13,7 +13,7 @@ const certifications = [
     title: "Complete Web Development Course (Batch 12)",
     provider: "Programming Hero",
     status: "Successfully Completed",
-    credentialUrl: "#",
+    credentialUrl: "https://drive.google.com/file/d/1vP7e8SSSWAYRmg7O8EAvYPx0yz1rUJnU/view?usp=drive_link",
     accent: "from-purple-600 to-indigo-500",
     skills: [
       "HTML5 & CSS3",
@@ -116,6 +116,7 @@ const CertificationsSection = () => {
               href={cert.credentialUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
               className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--accent-color)]/20 hover:bg-[var(--accent-color)] border border-[var(--accent-color)]/40 hover:border-[var(--accent-color)] rounded-full text-xs md:text-sm font-medium text-[var(--accent-color)] hover:text-white transition-all duration-300"
             >
               <FaExternalLinkAlt className="text-xs" />
