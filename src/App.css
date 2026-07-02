@@ -1,5 +1,5 @@
 :root[data-theme="dark"] {
-  --bg-gradient: linear-gradient(to bottom right, #000000, #1a0021, #20002a);
+  --bg-gradient: #0F172A;
   --text-color: #ffffff;
 }
 :root[data-theme="light"] {
@@ -11,7 +11,7 @@ html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: var(--bg-gradient, linear-gradient(to bottom right, #000000, #1a0021, #20002a));
+  background: var(--bg-gradient, #0F172A);
   color: var(--text-color, inherit);
   background-repeat: no-repeat; 
   background-size: cover;  
