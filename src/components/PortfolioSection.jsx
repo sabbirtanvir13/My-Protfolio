@@ -31,6 +31,7 @@ import {
 } from "react-icons/si";
 import { MdRocketLaunch } from "react-icons/md";
 import { HiOutlineCode } from "react-icons/hi";
+import dri from "../assets/dri.PNG";
 
 const PROJECTS_PER_PAGE = 4;
 
@@ -186,12 +187,55 @@ const projects = [
         "Enhanced skills in performance optimization, image lazy loading, creating immersive UI experiences, and deploying production apps on Vercel.",
     },
   },
+  {
+    id: 5,
+    title: "DevPulse API",
+    icon: <FaServer />,
+    iconColor: "#10B981",
+    category: "backend",
+    featured: true,
+    image: dri,
+    description:
+      "A lightweight, production-ready backend system for internal issue tracking and team collaboration with role-based access control.",
+    tech: [
+      { name: "Node.js", icon: <FaNodeJs />, color: "#68A063" },
+      { name: "Express", icon: <SiExpress />, color: "#ffffff" },
+      { name: "PostgreSQL", icon: <SiMongodb />, color: "#336791" },
+      { name: "JWT", icon: <FaLaptopCode />, color: "#F59E0B" },
+      { name: "TypeScript", icon: <FaReact />, color: "#3178C6" },
+    ],
+    features: [
+      "JWT-based authentication & role-based authorization (contributor/maintainer)",
+      "RESTful API for issue tracking (bug + feature requests)",
+      "Secure password hashing using bcrypt",
+      "Raw SQL queries using native pg driver (no ORM/query builder)",
+      "Role-controlled issue workflow system",
+      "Flexible filtering & sorting for issues",
+      "Modular Express architecture with TypeScript",
+      "Secure middleware for authentication & validation",
+    ],
+    repo: "https://github.com/sabbirtanvir13/DevPulse.git",
+    live: "https://dev-pulse-alpha-ebon.vercel.app/",
+    caseStudy: {
+      overview:
+        "DevPulse API is a lightweight, production-ready backend system designed for internal issue tracking and team collaboration. It allows developers to report bugs, request features, and manage workflow statuses in a structured and secure environment.",
+      problem:
+        "Most internal issue tracking systems are either too heavy, depend on external tools, or lack fine-grained role control and raw database flexibility required for learning-level backend engineering.",
+      solution:
+        "DevPulse solves this by providing a fully custom-built backend using Node.js and PostgreSQL with strict role-based access control, raw SQL for full database transparency, clean authentication flow using JWT, and minimal but scalable architecture.",
+      challenges:
+        "Designing role-based access (contributor vs maintainer), implementing secure JWT authentication flow, enforcing update rules (own issue vs any issue), handling filtering & sorting without ORM support, managing relational data without JOIN-heavy architecture constraints, and building clean raw SQL-based service layers.",
+      learned:
+        "Designing scalable backend architecture using Express + TypeScript, implementing secure authentication using JWT & bcrypt, working with PostgreSQL using raw SQL queries, structuring modular REST APIs professionally, building role-based authorization systems, and handling real-world API constraints without ORMs.",
+    },
+  },
 ];
 
 const filters = [
   { key: "all", label: "All", icon: <FaLayerGroup /> },
   { key: "fullstack", label: "Full Stack", icon: <FaServer /> },
   { key: "frontend", label: "Frontend", icon: <FaLaptopCode /> },
+  { key: "backend", label: "Backend", icon: <FaServer /> },
 ];
 
 /* ─── Case Study Modal ─── */
