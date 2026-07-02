@@ -162,36 +162,36 @@ const ContactSection = () => {
 
             {/* Contact Info */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold text-white">Contact Information</h3>
+              <h3 className="text-xl font-bold dark:text-white text-gray-900">Contact Information</h3>
               
               <div className="space-y-3">
                 <a
                   href="mailto:sabbirtanvirahmed18@gmail.com"
-                  className="flex items-center gap-3 p-3 bg-gray-900/60 border border-gray-800 hover:border-[var(--accent-color)]/50 rounded-xl transition-all duration-300 group"
+                  className="flex items-center gap-3 p-3 dark:bg-gray-900/60 bg-white/80 backdrop-blur-sm dark:border-gray-800 border-gray-200 hover:border-[var(--accent-color)]/50 rounded-xl transition-all duration-300 group"
                 >
                   <FaEnvelope className="text-[var(--accent-color)] text-lg" />
                   <div>
-                    <p className="text-xs text-gray-500">Email</p>
-                    <p className="text-sm text-gray-300 group-hover:text-white transition-colors">sabbirtanvirahmed18@gmail.com</p>
+                    <p className="text-xs dark:text-gray-500 text-gray-600">Email</p>
+                    <p className="text-sm dark:text-gray-300 text-gray-700 group-hover:text-[var(--accent-color)] transition-colors">sabbirtanvirahmed18@gmail.com</p>
                   </div>
                 </a>
 
                 <a
                   href="tel:+8801777829308"
-                  className="flex items-center gap-3 p-3 bg-gray-900/60 border border-gray-800 hover:border-[var(--accent-color)]/50 rounded-xl transition-all duration-300 group"
+                  className="flex items-center gap-3 p-3 dark:bg-gray-900/60 bg-white/80 backdrop-blur-sm dark:border-gray-800 border-gray-200 hover:border-[var(--accent-color)]/50 rounded-xl transition-all duration-300 group"
                 >
                   <FaPhone className="text-[var(--accent-color)] text-lg" />
                   <div>
-                    <p className="text-xs text-gray-500">Phone</p>
-                    <p className="text-sm text-gray-300 group-hover:text-white transition-colors">+880 1777-829308</p>
+                    <p className="text-xs dark:text-gray-500 text-gray-600">Phone</p>
+                    <p className="text-sm dark:text-gray-300 text-gray-700 group-hover:text-[var(--accent-color)] transition-colors">+880 1777-829308</p>
                   </div>
                 </a>
 
-                <div className="flex items-center gap-3 p-3 bg-gray-900/60 border border-gray-800 rounded-xl">
+                <div className="flex items-center gap-3 p-3 dark:bg-gray-900/60 bg-white/80 backdrop-blur-sm dark:border-gray-800 border-gray-200 rounded-xl">
                   <FaMapMarkerAlt className="text-[var(--accent-color)] text-lg" />
                   <div>
-                    <p className="text-xs text-gray-500">Location</p>
-                    <p className="text-sm text-gray-300">Dhaka, Bangladesh</p>
+                    <p className="text-xs dark:text-gray-500 text-gray-600">Location</p>
+                    <p className="text-sm dark:text-gray-300 text-gray-700">Dhaka, Bangladesh</p>
                   </div>
                 </div>
 
@@ -200,19 +200,19 @@ const ContactSection = () => {
                     href="https://github.com/sabbirtanvir13"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 p-3 bg-gray-900/60 border border-gray-800 hover:border-[var(--accent-color)]/50 rounded-xl transition-all duration-300 group"
+                    className="flex-1 flex items-center justify-center gap-2 p-3 dark:bg-gray-900/60 bg-white/80 backdrop-blur-sm dark:border-gray-800 border-gray-200 hover:border-[var(--accent-color)]/50 rounded-xl transition-all duration-300 group"
                   >
-                    <FaGithub className="text-gray-400 group-hover:text-[var(--accent-color)] text-lg transition-colors" />
-                    <span className="text-sm text-gray-400 group-hover:text-white transition-colors">GitHub</span>
+                    <FaGithub className="dark:text-gray-400 text-gray-700 group-hover:text-[var(--accent-color)] text-lg transition-colors" />
+                    <span className="text-sm dark:text-gray-400 text-gray-700 group-hover:text-[var(--accent-color)] transition-colors">GitHub</span>
                   </a>
                   <a
                     href="https://www.linkedin.com/in/tanvir-ahmed-sabbir-413a68389/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 p-3 bg-gray-900/60 border border-gray-800 hover:border-[var(--accent-color)]/50 rounded-xl transition-all duration-300 group"
+                    className="flex-1 flex items-center justify-center gap-2 p-3 dark:bg-gray-900/60 bg-white/80 backdrop-blur-sm dark:border-gray-800 border-gray-200 hover:border-[var(--accent-color)]/50 rounded-xl transition-all duration-300 group"
                   >
-                    <FaLinkedin className="text-gray-400 group-hover:text-[var(--accent-color)] text-lg transition-colors" />
-                    <span className="text-sm text-gray-400 group-hover:text-white transition-colors">LinkedIn</span>
+                    <FaLinkedin className="dark:text-gray-400 text-gray-700 group-hover:text-[var(--accent-color)] text-lg transition-colors" />
+                    <span className="text-sm dark:text-gray-400 text-gray-700 group-hover:text-[var(--accent-color)] transition-colors">LinkedIn</span>
                   </a>
                 </div>
               </div>
@@ -226,60 +226,60 @@ const ContactSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="bg-gray-900/70 backdrop-blur-sm border border-gray-800 hover:border-[var(--accent-color)]/30 rounded-2xl p-6 md:p-8 shadow-xl transition-all duration-500">
-              <h3 className="text-2xl font-bold text-white mb-2">
+            <div className="dark:bg-gray-900/70 bg-white/80 backdrop-blur-sm dark:border-gray-800 border-gray-200 hover:border-[var(--accent-color)]/30 rounded-2xl p-6 md:p-8 shadow-xl transition-all duration-500">
+              <h3 className="text-2xl font-bold dark:text-white text-gray-900 mb-2">
                 Let's build something <span className="text-[var(--accent-color)]">great</span> together.
               </h3>
-              <p className="text-gray-400 text-sm mb-6">
+              <p className="dark:text-gray-400 text-gray-600 text-sm mb-6">
                 Fill out the form below and I'll get back to you as soon as possible.
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
-                  <label className="block text-sm font-medium text-gray-300 mb-2">Name *</label>
+                  <label className="block text-sm font-medium dark:text-gray-300 text-gray-700 mb-2">Name *</label>
                   <input
                     type="text"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Your name"
-                    className="w-full px-4 py-3 bg-gray-800/80 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[var(--accent-color)] focus:ring-1 focus:ring-[var(--accent-color)] transition-all duration-300"
+                    className="w-full px-4 py-3 dark:bg-gray-800/80 bg-gray-100 dark:border-gray-700 border-gray-300 rounded-xl dark:text-white text-gray-900 placeholder-gray-500 focus:outline-none focus:border-[var(--accent-color)] focus:ring-1 focus:ring-[var(--accent-color)] transition-all duration-300"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-300 mb-2">Email *</label>
+                  <label className="block text-sm font-medium dark:text-gray-300 text-gray-700 mb-2">Email *</label>
                   <input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="your@email.com"
-                    className="w-full px-4 py-3 bg-gray-800/80 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[var(--accent-color)] focus:ring-1 focus:ring-[var(--accent-color)] transition-all duration-300"
+                    className="w-full px-4 py-3 dark:bg-gray-800/80 bg-gray-100 dark:border-gray-700 border-gray-300 rounded-xl dark:text-white text-gray-900 placeholder-gray-500 focus:outline-none focus:border-[var(--accent-color)] focus:ring-1 focus:ring-[var(--accent-color)] transition-all duration-300"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+                  <label className="block text-sm font-medium dark:text-gray-300 text-gray-700 mb-2">Subject</label>
                   <input
                     type="text"
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
                     placeholder="Subject (optional)"
-                    className="w-full px-4 py-3 bg-gray-800/80 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[var(--accent-color)] focus:ring-1 focus:ring-[var(--accent-color)] transition-all duration-300"
+                    className="w-full px-4 py-3 dark:bg-gray-800/80 bg-gray-100 dark:border-gray-700 border-gray-300 rounded-xl dark:text-white text-gray-900 placeholder-gray-500 focus:outline-none focus:border-[var(--accent-color)] focus:ring-1 focus:ring-[var(--accent-color)] transition-all duration-300"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-300 mb-2">Message *</label>
+                  <label className="block text-sm font-medium dark:text-gray-300 text-gray-700 mb-2">Message *</label>
                   <textarea
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Your message..."
                     rows="5"
-                    className="w-full px-4 py-3 bg-gray-800/80 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-[var(--accent-color)] focus:ring-1 focus:ring-[var(--accent-color)] transition-all duration-300 resize-none"
+                    className="w-full px-4 py-3 dark:bg-gray-800/80 bg-gray-100 dark:border-gray-700 border-gray-300 rounded-xl dark:text-white text-gray-900 placeholder-gray-500 focus:outline-none focus:border-[var(--accent-color)] focus:ring-1 focus:ring-[var(--accent-color)] transition-all duration-300 resize-none"
                   ></textarea>
                 </div>
 
@@ -314,7 +314,7 @@ const ContactSection = () => {
             className="fixed bottom-6 right-6 z-50 max-w-sm"
           >
             <div
-              className={`bg-gray-900/95 backdrop-blur-md border ${
+              className={`dark:bg-gray-900/95 bg-white/95 backdrop-blur-md border ${
                 notification.type === "success" ? "border-green-500/50" : "border-red-500/50"
               } rounded-2xl p-5 shadow-2xl`}
             >
@@ -328,11 +328,11 @@ const ContactSection = () => {
                   >
                     {notification.title}
                   </h4>
-                  <p className="text-gray-300 text-sm leading-relaxed">{notification.message}</p>
+                  <p className="dark:text-gray-300 text-gray-700 text-sm leading-relaxed">{notification.message}</p>
                 </div>
                 <button
                   onClick={() => setNotification(null)}
-                  className="flex-shrink-0 text-gray-500 hover:text-white transition-colors"
+                  className="flex-shrink-0 dark:text-gray-500 text-gray-600 hover:text-gray-900 dark:hover:text-white transition-colors"
                 >
                   <FaTimes className="text-lg" />
                 </button>

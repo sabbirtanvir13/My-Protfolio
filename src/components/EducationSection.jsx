@@ -60,7 +60,7 @@ const EducationSection = () => {
         <h2 className="text-3xl md:text-4xl font-bold">
           <span className="text-yellow-400">Education</span>
         </h2>
-        <p className="text-gray-400 mt-2 text-sm max-w-xl mx-auto">
+        <p className="dark:text-gray-400 text-gray-600 mt-2 text-sm max-w-xl mx-auto">
           My academic background and learning journey
         </p>
       </motion.div>
@@ -79,10 +79,10 @@ const EducationSection = () => {
               transition={{ delay: index * 0.2, duration: 0.7 }}
             >
               <div
-                className={`hidden sm:flex absolute left-3.5 md:left-4 top-6 w-3.5 h-3.5 rounded-full border-[3px] border-gray-950 bg-gradient-to-br ${item.accent} shadow-md shadow-purple-500/30 z-10`}
+                className={`hidden sm:flex absolute left-3.5 md:left-4 top-6 w-3.5 h-3.5 rounded-full border-[3px] dark:border-gray-950 border-white bg-gradient-to-br ${item.accent} shadow-md shadow-purple-500/30 z-10`}
               />
 
-              <div className="group bg-gray-900/80 backdrop-blur-sm border border-gray-800 hover:border-[var(--accent-color)]/50 rounded-2xl p-4 md:p-5 shadow-lg hover:shadow-[var(--accent-color)]/20 transition-all duration-300 hover:-translate-y-0.5">
+              <div className="group dark:bg-gray-900/80 bg-white/80 backdrop-blur-sm dark:border-gray-800 border-gray-200 hover:border-[var(--accent-color)]/50 rounded-2xl p-4 md:p-5 shadow-lg hover:shadow-[var(--accent-color)]/20 transition-all duration-300 hover:-translate-y-0.5">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
                   <div className="flex items-start gap-3">
                     <div
@@ -91,7 +91,7 @@ const EducationSection = () => {
                       {item.icon}
                     </div>
                     <div>
-                      <h3 className="text-base md:text-lg font-bold text-white group-hover:text-[var(--accent-color)] transition-colors">
+                      <h3 className="text-base md:text-lg font-bold dark:text-white text-gray-900 group-hover:text-[var(--accent-color)] transition-colors">
                         {item.degree}
                       </h3>
                       <p className="text-[var(--accent-color)] text-sm font-medium mt-0.5">
@@ -109,33 +109,33 @@ const EducationSection = () => {
                 </div>
 
                 <ul className="space-y-2 pl-1">
-                  <li className="flex items-center gap-2.5 text-xs md:text-sm text-gray-300">
+                  <li className="flex items-center gap-2.5 text-xs md:text-sm dark:text-gray-300 text-gray-700">
                     {detailIcons.location}
-                    <span className="text-gray-500 min-w-[72px]">Location:</span>
+                    <span className="dark:text-gray-500 text-gray-500 min-w-[72px]">Location:</span>
                     <span>{item.location}</span>
                   </li>
 
                   {item.group && (
-                    <li className="flex items-center gap-2.5 text-xs md:text-sm text-gray-300">
+                    <li className="flex items-center gap-2.5 text-xs md:text-sm dark:text-gray-300 text-gray-700">
                       {detailIcons.group}
-                      <span className="text-gray-500 min-w-[72px]">Group:</span>
+                      <span className="dark:text-gray-500 text-gray-500 min-w-[72px]">Group:</span>
                       <span className="text-yellow-400">{item.group}</span>
                     </li>
                   )}
 
-                  <li className="flex items-center gap-2.5 text-xs md:text-sm text-gray-300">
+                  <li className="flex items-center gap-2.5 text-xs md:text-sm dark:text-gray-300 text-gray-700">
                     {detailIcons.duration}
-                    <span className="text-gray-500 min-w-[72px]">
+                    <span className="dark:text-gray-500 text-gray-500 min-w-[72px]">
                       {item.isCurrent ? "Duration:" : "Completion:"}
                     </span>
                     <span>{item.duration}</span>
                   </li>
 
-                  <li className="flex items-center gap-2.5 text-xs md:text-sm text-gray-300">
+                  <li className="flex items-center gap-2.5 text-xs md:text-sm dark:text-gray-300 text-gray-700">
                     {item.isCurrent
                       ? detailIcons.statusCurrent
                       : detailIcons.statusCompleted}
-                    <span className="text-gray-500 min-w-[72px]">Status:</span>
+                    <span className="dark:text-gray-500 text-gray-500 min-w-[72px]">Status:</span>
                     <span
                       className={
                         item.isCurrent ? "text-green-400" : "text-[var(--accent-color)]"

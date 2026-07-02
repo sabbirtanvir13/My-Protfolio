@@ -24,7 +24,7 @@ const certifications = [
       "Node.js",
       "Express.js",
       "MongoDB",
-  
+
       "REST API Development",
       "JWT Authentication",
       "Git & GitHub",
@@ -52,7 +52,7 @@ const CertificationsSection = () => {
         <h2 className="text-3xl md:text-4xl font-bold">
           <span className="text-yellow-400">Certifications & Training</span>
         </h2>
-        <p className="text-gray-400 mt-2 text-sm max-w-xl mx-auto">
+        <p className="dark:text-gray-400 text-gray-600 mt-2 text-sm max-w-xl mx-auto">
           Professional courses and hands-on training I have completed
         </p>
       </motion.div>
@@ -65,7 +65,7 @@ const CertificationsSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.2, duration: 0.7 }}
-            className="group bg-gray-900/80 backdrop-blur-sm border border-gray-800 hover:border-[var(--accent-color)]/50 rounded-2xl p-4 md:p-5 shadow-lg hover:shadow-[var(--accent-color)]/20 transition-all duration-300 hover:-translate-y-0.5"
+            className="group dark:bg-gray-900/80 bg-white/80 backdrop-blur-sm dark:border-gray-800 border-gray-200 hover:border-[var(--accent-color)]/50 rounded-2xl p-4 md:p-5 shadow-lg hover:shadow-[var(--accent-color)]/20 transition-all duration-300 hover:-translate-y-0.5"
           >
             {/* Header */}
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
@@ -76,7 +76,7 @@ const CertificationsSection = () => {
                   <FaCertificate className="text-lg" />
                 </div>
                 <div>
-                  <h3 className="text-base md:text-lg font-bold text-white group-hover:text-[var(--accent-color)] transition-colors">
+                  <h3 className="text-base md:text-lg font-bold dark:text-white text-gray-900 group-hover:text-[var(--accent-color)] transition-colors">
                     {cert.title}
                   </h3>
                   <p className="text-[var(--accent-color)] text-sm font-medium mt-0.5">
@@ -103,7 +103,7 @@ const CertificationsSection = () => {
                 {cert.skills.map((skill, i) => (
                   <span
                     key={i}
-                    className="px-2 py-1 bg-gray-800/80 border border-gray-700 rounded-md text-[11px] text-gray-300 hover:border-[var(--accent-color)]/50 hover:text-[var(--accent-color)] transition-colors"
+                    className="px-2 py-1 dark:bg-gray-800/80 bg-gray-100 dark:border-gray-700 border-gray-300 rounded-md text-[11px] dark:text-gray-300 text-gray-700 hover:border-[var(--accent-color)]/50 hover:text-[var(--accent-color)] transition-colors"
                   >
                     {skill}
                   </span>

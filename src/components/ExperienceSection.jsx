@@ -80,7 +80,7 @@ const ExperienceSection = () => {
         <h2 className="text-3xl md:text-4xl font-bold">
           <span className="text-yellow-400">Experience</span>
         </h2>
-        <p className="text-gray-400 mt-2 text-sm max-w-xl mx-auto">
+        <p className="dark:text-gray-400 text-gray-600 mt-2 text-sm max-w-xl mx-auto">
           My professional journey — from building interfaces to ensuring quality
         </p>
       </motion.div>
@@ -102,11 +102,11 @@ const ExperienceSection = () => {
             >
               {/* Timeline dot */}
               <div
-                className={`hidden sm:flex absolute left-3.5 md:left-4 top-6 w-3.5 h-3.5 rounded-full border-[3px] border-gray-950 bg-gradient-to-br ${exp.accent} shadow-md shadow-[var(--accent-color)]/30 z-10`}
+                className={`hidden sm:flex absolute left-3.5 md:left-4 top-6 w-3.5 h-3.5 rounded-full border-[3px] dark:border-gray-950 border-white bg-gradient-to-br ${exp.accent} shadow-md shadow-[var(--accent-color)]/30 z-10`}
               />
 
               {/* Card */}
-              <div className="group bg-gray-900/80 backdrop-blur-sm border border-gray-800 hover:border-[var(--accent-color)]/50 rounded-2xl p-4 md:p-5 shadow-lg hover:shadow-[var(--accent-color)]/20 transition-all duration-300 hover:-translate-y-0.5">
+              <div className="group dark:bg-gray-900/80 bg-white/80 backdrop-blur-sm dark:border-gray-800 border-gray-200 hover:border-[var(--accent-color)]/50 rounded-2xl p-4 md:p-5 shadow-lg hover:shadow-[var(--accent-color)]/20 transition-all duration-300 hover:-translate-y-0.5">
                 {/* Header */}
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
                   <div className="flex items-start gap-3">
@@ -116,13 +116,13 @@ const ExperienceSection = () => {
                       {exp.icon}
                     </div>
                     <div>
-                      <h3 className="text-base md:text-lg font-bold text-white group-hover:text-[var(--accent-color)] transition-colors">
+                      <h3 className="text-base md:text-lg font-bold dark:text-white text-gray-900 group-hover:text-[var(--accent-color)] transition-colors">
                         {exp.role}
                       </h3>
                       <p className="text-[var(--accent-color)] text-sm font-medium mt-0.5">
                         {exp.company}
                       </p>
-                      <span className="inline-block mt-1.5 text-[10px] font-semibold uppercase tracking-wider text-gray-500 bg-gray-800 px-2 py-0.5 rounded-full">
+                      <span className="inline-block mt-1.5 text-[10px] font-semibold uppercase tracking-wider dark:text-gray-500 text-gray-600 dark:bg-gray-800 bg-gray-100 px-2 py-0.5 rounded-full">
                         {exp.type}
                       </span>
                     </div>
@@ -153,7 +153,7 @@ const ExperienceSection = () => {
                     {exp.responsibilities.map((item, i) => (
                       <li
                         key={i}
-                        className="flex items-start gap-2 text-gray-300 text-xs md:text-sm leading-relaxed"
+                        className="flex items-start gap-2 dark:text-gray-300 text-gray-700 text-xs md:text-sm leading-relaxed"
                       >
                         <FaCheckCircle className="text-[var(--accent-color)] mt-0.5 flex-shrink-0 text-[10px]" />
                         <span>{item}</span>
@@ -172,14 +172,14 @@ const ExperienceSection = () => {
                       typeof tag === "string" ? (
                         <span
                           key={i}
-                          className="px-2 py-1 bg-gray-800/80 border border-gray-700 rounded-md text-[11px] text-gray-300 hover:border-yellow-400/50 hover:text-yellow-300 transition-colors"
+                          className="px-2 py-1 dark:bg-gray-800/80 bg-gray-100/80 dark:border-gray-700 border-gray-300 rounded-md text-[11px] dark:text-gray-300 text-gray-700 hover:border-yellow-400/50 hover:text-yellow-300 transition-colors"
                         >
                           {tag}
                         </span>
                       ) : (
                         <span
                           key={i}
-                          className="inline-flex items-center gap-1.5 px-2 py-1 bg-gray-800/80 border border-gray-700 rounded-md text-[11px] text-gray-300 hover:border-[var(--accent-color)]/50 hover:text-[var(--accent-color)] transition-colors"
+                          className="inline-flex items-center gap-1.5 px-2 py-1 dark:bg-gray-800/80 bg-gray-100/80 dark:border-gray-700 border-gray-300 rounded-md text-[11px] dark:text-gray-300 text-gray-700 hover:border-[var(--accent-color)]/50 hover:text-[var(--accent-color)] transition-colors"
                         >
                           <span className="text-sm">{tag.icon}</span>
                           {tag.name}

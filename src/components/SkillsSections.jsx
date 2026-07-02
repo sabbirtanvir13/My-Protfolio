@@ -145,7 +145,7 @@ export default function SkillsSections() {
         <h2 className="text-3xl md:text-5xl font-bold mb-3">
           <span className="text-yellow-400">🛠 Skills</span>
         </h2>
-        <p className="text-gray-400 mt-2 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+        <p className="dark:text-gray-400 text-gray-600 mt-2 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
           A comprehensive toolkit spanning frontend mastery, backend engineering,
           databases, testing, and the soft skills that tie it all together.
         </p>
@@ -167,7 +167,7 @@ export default function SkillsSections() {
               className={`group relative px-4 py-2.5 md:px-5 md:py-3 rounded-xl text-xs md:text-sm font-semibold transition-all duration-300 cursor-pointer border ${
                 activeTab === index
                   ? `bg-gradient-to-r ${cat.color} text-white border-transparent shadow-lg`
-                  : "bg-gray-900/60 text-gray-400 border-gray-800 hover:border-gray-600 hover:text-gray-200"
+                  : "dark:bg-gray-900/60 bg-gray-100 dark:text-gray-400 text-gray-600 dark:border-gray-800 border-gray-300 hover:border-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
               }`}
             >
               <span className="flex items-center gap-2">
@@ -197,7 +197,7 @@ export default function SkillsSections() {
             transition={{ duration: 0.3 }}
             className="text-center mb-8"
           >
-            <h3 className="text-xl md:text-2xl font-bold text-white flex items-center justify-center gap-3">
+            <h3 className="text-xl md:text-2xl font-bold dark:text-white text-gray-900 flex items-center justify-center gap-3">
               <span
                 className={`w-10 h-10 rounded-xl bg-gradient-to-br ${categories[activeTab].color} flex items-center justify-center text-white text-lg shadow-lg`}
               >
@@ -227,8 +227,8 @@ export default function SkillsSections() {
                 className="group relative"
               >
                 <div
-                  className="relative bg-gray-900/80 backdrop-blur-sm border border-gray-800 rounded-2xl p-5 md:p-6 flex flex-col items-center justify-center gap-3 
-                  hover:border-gray-600 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl overflow-hidden cursor-default"
+                  className="relative dark:bg-gray-900/80 bg-white/80 backdrop-blur-sm dark:border-gray-800 border-gray-200 rounded-2xl p-5 md:p-6 flex flex-col items-center justify-center gap-3 
+                  hover:border-gray-400 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl overflow-hidden cursor-default"
                 >
                   {/* Hover glow effect */}
                   <div
@@ -253,7 +253,7 @@ export default function SkillsSections() {
                   </div>
 
                   {/* Name */}
-                  <p className="relative text-xs md:text-sm font-semibold tracking-wide text-center text-gray-300 group-hover:text-white transition-colors duration-300">
+                  <p className="relative text-xs md:text-sm font-semibold tracking-wide text-center dark:text-gray-300 text-gray-700 group-hover:text-white dark:group-hover:text-white transition-colors duration-300">
                     {skill.name}
                   </p>
 
@@ -278,21 +278,21 @@ export default function SkillsSections() {
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
         >
-          <div className="inline-flex items-center gap-6 px-6 py-3 bg-gray-900/60 backdrop-blur-sm border border-gray-800 rounded-full">
+          <div className="inline-flex items-center gap-6 px-6 py-3 dark:bg-gray-900/60 bg-white/60 backdrop-blur-sm dark:border-gray-800 border-gray-200 rounded-full">
             {categories.map((cat, i) => (
               <button
                 key={i}
                 onClick={() => setActiveTab(i)}
                 className={`flex items-center gap-1.5 text-xs font-medium transition-all duration-300 cursor-pointer ${
-                  activeTab === i ? "text-yellow-400 scale-110" : "text-gray-500 hover:text-gray-300"
+                  activeTab === i ? "text-yellow-400 scale-110" : "dark:text-gray-500 text-gray-600 hover:text-gray-800 dark:hover:text-gray-300"
                 }`}
               >
                 <span>{cat.emoji}</span>
                 <span className="hidden md:inline">{cat.items.length}</span>
               </button>
             ))}
-            <div className="h-4 w-[1px] bg-gray-700" />
-            <span className="text-xs text-gray-500">
+            <div className="h-4 w-[1px] bg-gray-300 dark:bg-gray-700" />
+            <span className="text-xs dark:text-gray-500 text-gray-600">
               <span className="text-yellow-400 font-bold">
                 {categories.reduce((acc, c) => acc + c.items.length, 0)}
               </span>{" "}
