@@ -111,7 +111,7 @@ const About = () => {
           <div className="space-y-3">
             <p className="dark:text-gray-300 text-gray-700 text-sm md:text-base leading-relaxed">
               I'm a passionate{" "}
-              <span className="dark:text-white text-gray-900 font-semibold">
+              <span className="dark:text-white text-black font-semibold">
                 Full Stack Developer
               </span>{" "}
               with a strong interest in building modern, scalable, and

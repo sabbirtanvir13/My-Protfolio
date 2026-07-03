@@ -33,7 +33,7 @@ const Banner = () => {
       {/* Left Content */}
       <div className="flex-1 text-center md:text-left">
         <motion.h1
-          className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight"
+          className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight dark:text-white text-gray-900"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
