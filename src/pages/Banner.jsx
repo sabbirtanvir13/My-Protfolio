@@ -40,7 +40,7 @@ const Banner = () => {
         >
           Hi, I'm{" "}
           <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
-            Tanvir Ahmed
+            Tanvir Ahmed Sabbir
           </span>
         </motion.h1>
 
@@ -59,8 +59,7 @@ const Banner = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.6 }}
         >
-          I build dynamic and responsive web applications using React, Node.js, Express, and MongoDB.
-          I love turning ideas into powerful, user-friendly digital experiences with clean design and optimized code.
+          I craft dynamic, responsive web applications using the MERN stack. Passionate about transforming ideas into powerful, user-friendly digital experiences with clean design and optimized code.
         </motion.p>
 
         {/* Social Icons */}
@@ -100,8 +99,8 @@ const Banner = () => {
           </button>
 
           <a
-            href="/image/image.png"
-            download="Tanvir_Ahmed_CV.png"
+            href="https://drive.google.com/uc?export=download&id=1JKQWymRKfx5tWcl6dHHKyc1HfnBx8vxj"
+            download="Tanvir_Ahmed_CV.pdf"
             className="flex items-center justify-center gap-2 px-6 py-3 border border-[var(--accent-color)] hover:bg-[var(--accent-color)] hover:scale-105 rounded-full transition-all duration-300 font-medium text-center"
           >
             <HiDownload size={20} />

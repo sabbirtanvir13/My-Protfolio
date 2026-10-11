@@ -32,6 +32,28 @@ const certifications = [
       "Full Stack Project Development",
     ],
   },
+  {
+    id: 2,
+    title: "Next Level Web Development — Level 2, Batch 7 (L2B7)",
+    provider: "Programming Hero",
+    status: "Successfully Completed",
+    credentialUrl: "#",
+    accent: "from-orange-500 to-amber-500",
+    skills: [
+      "TypeScript",
+      "Object-Oriented Programming (OOP)",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Next.js",
+      "Docker",
+      "AWS",
+      "Automated Testing",
+      "System Design",
+      "REST API",
+    ],
+  },
 ];
 
 const CertificationsSection = () => {

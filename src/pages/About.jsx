@@ -13,6 +13,9 @@ import {
   SiExpress,
   SiPostgresql,
   SiMongodb,
+  SiPrisma,
+  SiDocker,
+  SiAmazon,
 } from "react-icons/si";
 
 const techStack = [
@@ -23,6 +26,9 @@ const techStack = [
   { name: "Express.js", icon: <SiExpress />, color: "#ffffff" },
   { name: "PostgreSQL", icon: <SiPostgresql />, color: "#336791" },
   { name: "MongoDB", icon: <SiMongodb />, color: "#4DB33D" },
+  { name: "Prisma ORM", icon: <SiPrisma />, color: "#0C344B" },
+  { name: "Docker", icon: <SiDocker />, color: "#2496ED" },
+  { name: "AWS", icon: <SiAmazon />, color: "#FF9900" },
 ];
 
 
@@ -124,9 +130,9 @@ const About = () => {
               products.
             </p>
             <p className="dark:text-gray-300 text-gray-700 text-sm md:text-base leading-relaxed">
-              Currently, I contribute to a{" "}
+              Currently, I work as a{" "}
               <span className="text-yellow-400 font-semibold">
-                Website Testing Team
+                Full Stack Developer QA Engineer
               </span>
               , performing manual testing, identifying and reporting bugs, and
               ensuring applications work smoothly across different browsers and

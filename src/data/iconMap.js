@@ -17,6 +17,10 @@ import {
   FaCheckCircle,
   FaLightbulb,
   FaArrowLeft,
+  FaCreditCard,
+  FaHtml5,
+  FaCss3Alt,
+  FaDumbbell,
 } from "react-icons/fa";
 import {
   SiMongodb,
@@ -25,6 +29,12 @@ import {
   SiFirebase,
   SiNetlify,
   SiVercel,
+  SiNextdotjs,
+  SiTypescript,
+  SiPostgresql,
+  SiPrisma,
+  SiDocker,
+  SiAmazon,
 } from "react-icons/si";
 import { MdRocketLaunch } from "react-icons/md";
 import { HiOutlineCode } from "react-icons/hi";
@@ -48,12 +58,22 @@ export const iconMap = {
   FaCheckCircle,
   FaLightbulb,
   FaArrowLeft,
+  FaCreditCard,
+  FaHtml5,
+  FaCss3Alt,
+  FaDumbbell,
   SiMongodb,
   SiExpress,
   SiTailwindcss,
   SiFirebase,
   SiNetlify,
   SiVercel,
+  SiNextdotjs,
+  SiTypescript,
+  SiPostgresql,
+  SiPrisma,
+  SiDocker,
+  SiAmazon,
   MdRocketLaunch,
   HiOutlineCode,
 };

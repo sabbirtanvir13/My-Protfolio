@@ -39,8 +39,8 @@ const experiences = [
   },
   {
     id: 2,
-    role: "Website Testing Team",
-    company: "Independent Team",
+    role: "Full Stack Developer QA Engineer",
+    company: "Website Testing Team - Independent",
     duration: "Current",
     type: "Quality Assurance",
     isCurrent: true,
@@ -59,6 +59,7 @@ const experiences = [
       "Cross-browser Testing",
       "Regression Testing",
       "Quality Assurance",
+      "Full Stack Development",
     ],
   },
 ];
